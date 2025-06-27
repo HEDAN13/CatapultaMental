@@ -1,0 +1,50 @@
+/* Fuente Libre Franklin */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* font-family: "Libre Franklin", sans-serif; */
+
+/* Reset de CSS para eliminar los estilos por defecto que traen los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Para que todas las páginas tengan la misma fuente la declaramos en el body */
+body {
+    font-family: "Libre Franklin", sans-serif;
+}
+
+header {
+    background-color: #141b38;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 50px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+main {
+    background-color: #d7efff;
+    color: #272727;
+}
+
+.link-catapultas img {
+    max-height: 400px;
+}
+
+footer {
+    background-color: #141b38;
+    color: #fff;
+}
