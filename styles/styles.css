@@ -14,7 +14,9 @@ body {
     font-family: "Libre Franklin", sans-serif;
 }
 
-header {
+/* Barra de navegación */
+
+.navbar-custom {
     background-color: #141b38;
 }
 
@@ -27,9 +29,38 @@ header {
     text-decoration: none;
 }
 
-.social-media img {
-    width: 50px;
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #8d95b4;
 }
+
+.nav-link:hover {
+    color: aquamarine;
+}
+
+.navbar-toggler {
+    background-color: #8d95b47c;
+    color: #aaa;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+@media(max-width: 992px) {
+    .social-media {
+        display: none;
+    }
+}
+
+.social-media img {
+    border-radius: 100%;
+    border: 1px solid #d7efff;
+    background-color: #d7efff;
+    width: 2rem;
+}
+
+/* Contenido principal */
 
 h1 {
     font-size: 40px;
