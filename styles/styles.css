@@ -80,6 +80,10 @@ main {
     max-height: 300px;
 }
 
+.img-custom {
+    border-radius: 5px;
+}
+
 footer {
     background-color: #141b38;
     color: #fff;
