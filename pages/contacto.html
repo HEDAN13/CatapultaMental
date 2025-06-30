@@ -12,7 +12,7 @@
     <title>Catapulta mental</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
         <nav class="navbar navbar-expand-lg navbar-custom">
             <div class="container-fluid d-flex align-items-center justify-content-between position-relative w-100">
@@ -65,23 +65,23 @@
         </nav>
     </header>
 
-    <h1>Contáctenos</h1>
-    <main>
+    <main class="flex-fill">
+        <h1 class="text-center">Contáctenos</h1>
         <form action="/submit" method="post" enctype="application/x-www-form-urlencoded">
             <fieldset>
                 <legend>Datos de contacto</legend>
-                <label for="name">Nombre:</label>
-                <input type="text" name="name" id="name">
-                <label for="email">E-Mail:</label>
-                <input type="email" name="email" id="email">
+                <label for="name" class="form-label">Nombre:</label>
+                <input type="text" name="name" id="name" class="form-control">
+                <label for="email" class="form-label">E-Mail:</label>
+                <input type="email" name="email" id="email" class="form-control">
             </fieldset>
-            <label for="message">Déjanos un mensaje</label>
-            <textarea name="message" id="message" maxlength="1000"></textarea>
-            <input type="submit" value="Enviar">
+            <label for="message" class="form-label">Déjanos un mensaje</label>
+            <textarea name="message" id="message" maxlength="1000" class="form-control"></textarea>
+            <input type="submit" class="btn btn-primary" value="Enviar">
         </form>
     </main>
 
-    <footer>
+    <footer class="mt-auto">
         <div class="social-media justify-content-center order-2 d-lg-none d-flex align-items-center">
             <a class="p-1 m-1 align-text-center" href="https://instagram.com/" target="_blank">
                 <img src="../assets/instagram.png" alt="instagram logo">
