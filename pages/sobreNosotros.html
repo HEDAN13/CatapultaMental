@@ -12,7 +12,7 @@
     <title>Catapulta mental</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
         <nav class="navbar navbar-expand-lg navbar-custom">
             <div class="container-fluid d-flex align-items-center justify-content-between position-relative w-100">
@@ -64,37 +64,97 @@
             </div>
         </nav>
     </header>
-
-    <main>
-        <section>
-            <h1>Sobre nosotros</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi repellat quaerat voluptatibus
-                praesentium! Veniam minus neque dolore, cum quo soluta nihil corporis earum qui! Labore ab quae fugiat
-                tempora vero.</p>
-        </section>
-        <section>
-            <article>
-                <h2>Nuestros valores</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquid rem, maxime autem ducimus
-                    nulla reprehenderit nesciunt, unde in neque facilis. Hic reiciendis voluptates numquam id cum
-                    placeat molestiae pariatur.
-                    Ipsa, harum accusantium! Repudiandae molestiae impedit expedita, ullam voluptate blanditiis quae
-                    laborum minima nulla vitae velit eligendi doloribus magni iste? Optio mollitia numquam ipsa cum
-                    pariatur blanditiis in commodi rem.</p>
-            </article>
-            <article>
-                <h2>Nuestra visión</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquid rem, maxime autem ducimus
-                    nulla reprehenderit nesciunt, unde in neque facilis. Hic reiciendis voluptates numquam id cum
-                    placeat molestiae pariatur.
-                    Ipsa, harum accusantium! Repudiandae molestiae impedit expedita, ullam voluptate blanditiis quae
-                    laborum minima nulla vitae velit eligendi doloribus magni iste? Optio mollitia numquam ipsa cum
-                    pariatur blanditiis in commodi rem.</p>
-            </article>
-        </section>
+    <!-- Principal -->
+    <main class="flex-fill">
+        <h1 class="text-center">Sobre nosotros</h1>
+        <div id="carouselExample" class="carousel carousel-dark slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <article class="container pt-1 pt-lg-3 px-2 px-lg-4">
+                        <div class="row justify-content-center">
+                            <div class="col-2"></div>
+                            <div class="col-8 align-items-stretch">
+                                <h2 class="text-center m-1 p-1">Nosotros</h2>
+                                <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Quasi
+                                    repellat
+                                    quaerat voluptatibus
+                                    praesentium! Veniam minus neque dolore, cum quo soluta nihil corporis earum qui!
+                                    Labore
+                                    ab
+                                    quae fugiat
+                                    tempora vero.</p>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article class="container pt-1 pt-lg-3 px-2 px-lg-4">
+                        <div class="row justify-content-center">
+                            <div class="col-2"></div>
+                            <div class="col-8 align-items-stretch">
+                                <h2 class="text-center">Nuestros valores</h2>
+                                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Maiores
+                                    aliquid rem, maxime autem ducimus
+                                    nulla reprehenderit nesciunt, unde in neque facilis. Hic reiciendis voluptates
+                                    numquam
+                                    id
+                                    cum
+                                    placeat molestiae pariatur.
+                                    Ipsa, harum accusantium! Repudiandae molestiae impedit expedita, ullam voluptate
+                                    blanditiis
+                                    quae
+                                    laborum minima nulla vitae velit eligendi doloribus magni iste? Optio mollitia
+                                    numquam
+                                    ipsa
+                                    cum
+                                    pariatur blanditiis in commodi rem.</p>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article class="container pt-1 pt-lg-3 px-2 px-lg-4">
+                        <div class="row justify-content-center">
+                            <div class="col-2"></div>
+                            <div class="col-8 align-items-stretch">
+                                <h2 class="text-center">Nuestra visión</h2>
+                                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Maiores
+                                    aliquid rem, maxime autem ducimus
+                                    nulla reprehenderit nesciunt, unde in neque facilis. Hic reiciendis voluptates
+                                    numquam id
+                                    cum
+                                    placeat molestiae pariatur.
+                                    Ipsa, harum accusantium! Repudiandae molestiae impedit expedita, ullam voluptate
+                                    blanditiis
+                                    quae
+                                    laborum minima nulla vitae velit eligendi doloribus magni iste? Optio mollitia
+                                    numquam ipsa
+                                    cum
+                                    pariatur blanditiis in commodi rem.</p>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
 
-    <footer>
+    <footer class="mt-auto">
         <div class="social-media justify-content-center order-2 d-lg-none d-flex align-items-center">
             <a class="p-1 m-1 align-text-center" href="https://instagram.com/" target="_blank">
                 <img src="../assets/instagram.png" alt="instagram logo">
