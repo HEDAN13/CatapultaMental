@@ -65,20 +65,30 @@
         </nav>
     </header>
 
-    <main class="flex-fill">
-        <h1 class="text-center">Contáctenos</h1>
-        <form action="/submit" method="post" enctype="application/x-www-form-urlencoded">
-            <fieldset>
-                <legend>Datos de contacto</legend>
-                <label for="name" class="form-label">Nombre:</label>
-                <input type="text" name="name" id="name" class="form-control">
-                <label for="email" class="form-label">E-Mail:</label>
-                <input type="email" name="email" id="email" class="form-control">
-            </fieldset>
-            <label for="message" class="form-label">Déjanos un mensaje</label>
-            <textarea name="message" id="message" maxlength="1000" class="form-control"></textarea>
-            <input type="submit" class="btn btn-primary" value="Enviar">
-        </form>
+    <main>
+        <h1 class="text-center pt-1 pt-lg-3">Contáctenos</h1>
+        <div class="flex-fill d-flex justify-content-center align-items-center py-4">
+            <form class="contact-form" action="/submit" method="post" enctype="application/x-www-form-urlencoded">
+                <fieldset class="contact-fieldset p-4 mb-3">
+                    <legend class="text-center fs-4 mb-4">Datos de contacto</legend>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input type="text" name="name" id="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-Mail:</label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+                </fieldset>
+                <div class="mb-3 text-center">
+                    <label for="message" class="form-label fs-3">Déjanos un mensaje</label>
+                    <textarea name="message" id="message" maxlength="1000" class="form-control" rows="4"></textarea>
+                </div>
+                <div class="mb-3 text-center">
+                    <input type="submit" class="btn btn-custom px-4 py-2" value="Enviar">
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer class="mt-auto">

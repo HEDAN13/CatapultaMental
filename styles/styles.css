@@ -84,6 +84,31 @@ main {
     border-radius: 5px;
 }
 
+/* Estilos para el formulario */
+.contact-form {
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-fieldset {
+    border: 1px solid #141b38;
+    border-radius: 5px;
+    box-shadow: 3px 3px #777;
+}
+
+.btn-custom {
+    background-color: #141b38;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #324cdd;
+}
+
 footer {
     background-color: #141b38;
     color: #fff;
