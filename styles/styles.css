@@ -107,6 +107,7 @@ main {
 
 .btn-custom:hover {
     background-color: #324cdd;
+    color: #272727;
 }
 
 footer {
