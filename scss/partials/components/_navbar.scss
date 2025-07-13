@@ -3,34 +3,42 @@
 
 header {
     nav {
-        background-color: $bgPrincipal;
+        background-color: variables.$bgPrincipal;
         padding: 0.5rem 1rem;
+
         a {
-            color: $colorPrincipal;
+            color: variables.$colorPrincipal;
             text-decoration: none;
+
             img {
                 max-height: 70px;
             }
         }
-        ul {
-            list-style: none;
-            li {
-                a {
-                    &.active {
-                        color: $colorActual;
-                    }
-                    &:hover {
-                        color: $colorHover;
-                    }
-                }
+
+        .navbar {
+            .navbar-nav {
+                list-style: none;
             }
         }
     }
 }
 
+.nav-link {
+    color: variables.$colorPrincipal;
+
+    &.active, &.show {
+        color: variables.$colorActual !important;
+        font-weight: bold;
+    }
+
+    &:hover {
+        color: variables.$colorHover;
+    }
+}
+
 .navbar-toggler {
-    background-color: $bgToggler;
-    color: $colorToggler;
+    background-color: variables.$bgToggler;
+    color: variables.$colorToggler;
 }
 
 .navbar-toggler-icon {
@@ -45,7 +53,7 @@ header {
 
 .social-media img {
     border-radius: 100%;
-    border: 1px solid $bgMain;
-    background-color: $bgMain;
+    border: 1px solid variables.$bgMain;
+    background-color: variables.$bgMain;
     width: 2rem;
 }

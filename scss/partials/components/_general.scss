@@ -6,8 +6,8 @@ h1 {
 }
 
 main {
-    background-color: $bgMain;
-    color: $colorMain;
+    background-color: variables.$bgMain;
+    color: variables.$colorMain;
 }
 
 .link-catapultas img {
@@ -25,14 +25,14 @@ main {
 }
 
 .contact-fieldset {
-    border: 1px solid $bgPrincipal;
+    border: 1px solid variables.$bgPrincipal;
     border-radius: 5px;
-    box-shadow: 3px 3px $colorShadow;
+    box-shadow: 3px 3px variables.$colorShadow;
 }
 
 .btn-custom {
-    background-color: $bgPrincipal;
-    color: $colorPrincipal;
+    background-color: variables.$bgPrincipal;
+    color: variables.$colorPrincipal;
     border: none;
     border-radius: 25px;
     font-weight: 600;
@@ -40,6 +40,6 @@ main {
 }
 
 .btn-custom:hover {
-    background-color: $colorHover;
-    color: $colorMain;
+    background-color: variables.$colorHover;
+    color: variables.$colorMain;
 }

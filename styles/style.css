@@ -1,116 +1,118 @@
+@charset "UTF-8";
 /* Fuente Libre Franklin */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-/* font-family: "Libre Franklin", sans-serif; */
-
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 /* Reset de CSS para eliminar los estilos por defecto que traen los navegadores */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
+/* font-family: "Libre Franklin", sans-serif; */
 /* Para que todas las páginas tengan la misma fuente la declaramos en el body */
 body {
-    font-family: "Libre Franklin", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 /* Barra de navegación */
-
-.navbar-custom {
-    background-color: #141b38;
-    padding: 0.5rem 1rem;
+header nav {
+  background-color: #141b38;
+  padding: 0.5rem 1rem;
+}
+header nav a {
+  color: #ededed;
+  text-decoration: none;
+}
+header nav a img {
+  max-height: 70px;
+}
+header nav .navbar .navbar-nav {
+  list-style: none;
 }
 
-.navbar ul {
-    list-style: none;
+.nav-link {
+  color: #ededed;
 }
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
+.nav-link.active, .nav-link.show {
+  color: #8d95b4 !important;
+  font-weight: bold;
 }
-
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-    color: #8d95b4;
-}
-
 .nav-link:hover {
-    color: purple;
+  color: #324cdd;
 }
 
 .navbar-toggler {
-    background-color: #8d95b47c;
-    color: #aaa;
+  background-color: rgba(141, 149, 180, 0.4862745098);
+  color: #aaa;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-.logo-img {
-    max-height: 70px;
+@media (max-width: 992px) {
+  .navbar-brand {
+    margin-left: auto;
+  }
 }
-
-@media(max-width: 992px) {
-    .navbar-brand {
-        margin-left: auto;
-    }
-}
-
 .social-media img {
-    border-radius: 100%;
-    border: 1px solid #d7efff;
-    background-color: #d7efff;
-    width: 2rem;
+  border-radius: 100%;
+  border: 1px solid #d7efff;
+  background-color: #d7efff;
+  width: 2rem;
 }
 
 /* Contenido principal */
-
 h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 main {
-    background-color: #d7efff;
-    color: #272727;
+  background-color: #d7efff;
+  color: #272727;
 }
 
 .link-catapultas img {
-    max-height: 300px;
+  max-height: 300px;
 }
 
 .img-custom {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 /* Estilos para el formulario */
 .contact-form {
-    max-width: 600px;
-    width: 100%;
+  max-width: 600px;
+  width: 100%;
 }
 
 .contact-fieldset {
-    border: 1px solid #141b38;
-    border-radius: 5px;
-    box-shadow: 3px 3px #777;
+  border: 1px solid #141b38;
+  border-radius: 5px;
+  box-shadow: 3px 3px #777;
 }
 
 .btn-custom {
-    background-color: #141b38;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+  background-color: #141b38;
+  color: #ededed;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .btn-custom:hover {
-    background-color: #324cdd;
-    color: #272727;
+  background-color: #324cdd;
+  color: #272727;
 }
 
 footer {
-    background-color: #141b38;
-    color: #fff;
+  background-color: #141b38;
+  color: #ededed;
 }
+
+/*# sourceMappingURL=style.css.map */
