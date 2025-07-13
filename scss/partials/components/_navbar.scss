@@ -61,11 +61,14 @@ header {
     margin-left: .5rem;
 }
 
+.navbar-collapse {
+    justify-content: center;
+}
+
 .social-media {
     display: flex;
     align-items: center;
 
-    
     img {
         border-radius: 100%;
         border: 1px solid variables.$bgMain;
@@ -75,8 +78,8 @@ header {
 }
 
 .social-link {
-    padding: 1rem;
-    margin: 1rem;
+    padding: .25rem;
+    margin: .25rem;
     text-align: center;
 }
 

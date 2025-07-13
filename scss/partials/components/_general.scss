@@ -1,14 +1,42 @@
 @use "../utilities/variables";
 /* Contenido principal */
 
-h1 {
-    font-size: 40px;
-}
-
 main {
     background-color: variables.$bgMain;
     color: variables.$colorMain;
+
+    .principal {
+        padding-top: min(1rem, 4%);
+        padding-right: min(1.5rem, 6%);
+        padding-left: min(1.5rem, 6%);
+        
+        h1 {
+            font-size: clamp(1.5rem, calc(6vw + 1rem), 4rem);
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    .secundario {
+        padding-top: min(1rem, 4%);
+        padding-right: min(1.5rem, 6%);
+        padding-left: min(1.5rem, 6%);
+        article {
+            h2 {
+                font-size: clamp(1rem, calc(4vw + .5rem), 2rem);
+                text-align: center;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
 }
+
 
 .link-catapultas img {
     max-height: 300px;

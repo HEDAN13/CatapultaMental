@@ -68,6 +68,10 @@ header nav .navbar .navbar-nav {
   margin-left: 0.5rem;
 }
 
+.navbar-collapse {
+  justify-content: center;
+}
+
 .social-media {
   display: flex;
   align-items: center;
@@ -80,8 +84,8 @@ header nav .navbar .navbar-nav {
 }
 
 .social-link {
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0.25rem;
+  margin: 0.25rem;
   text-align: center;
 }
 
@@ -95,13 +99,33 @@ header nav .navbar .navbar-nav {
   }
 }
 /* Contenido principal */
-h1 {
-  font-size: 40px;
-}
-
 main {
   background-color: #d7efff;
   color: #272727;
+}
+main .principal {
+  padding-top: min(1rem, 4%);
+  padding-right: min(1.5rem, 6%);
+  padding-left: min(1.5rem, 6%);
+}
+main .principal h1 {
+  font-size: clamp(1.5rem, 6vw + 1rem, 4rem);
+  text-align: center;
+}
+main .principal p {
+  text-align: justify;
+}
+main .secundario {
+  padding-top: min(1rem, 4%);
+  padding-right: min(1.5rem, 6%);
+  padding-left: min(1.5rem, 6%);
+}
+main .secundario article h2 {
+  font-size: clamp(1rem, 4vw + 0.5rem, 2rem);
+  text-align: center;
+}
+main .secundario article p {
+  text-align: justify;
 }
 
 .link-catapultas img {
