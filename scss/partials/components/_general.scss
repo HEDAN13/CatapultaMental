@@ -1,0 +1,45 @@
+@use "../utilities/variables";
+/* Contenido principal */
+
+h1 {
+    font-size: 40px;
+}
+
+main {
+    background-color: $bgMain;
+    color: $colorMain;
+}
+
+.link-catapultas img {
+    max-height: 300px;
+}
+
+.img-custom {
+    border-radius: 5px;
+}
+
+/* Estilos para el formulario */
+.contact-form {
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-fieldset {
+    border: 1px solid $bgPrincipal;
+    border-radius: 5px;
+    box-shadow: 3px 3px $colorShadow;
+}
+
+.btn-custom {
+    background-color: $bgPrincipal;
+    color: $colorPrincipal;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: $colorHover;
+    color: $colorMain;
+}

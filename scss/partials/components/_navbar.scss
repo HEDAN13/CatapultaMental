@@ -1,0 +1,51 @@
+@use "../utilities/variables";
+/* Barra de navegación */
+
+header {
+    nav {
+        background-color: $bgPrincipal;
+        padding: 0.5rem 1rem;
+        a {
+            color: $colorPrincipal;
+            text-decoration: none;
+            img {
+                max-height: 70px;
+            }
+        }
+        ul {
+            list-style: none;
+            li {
+                a {
+                    &.active {
+                        color: $colorActual;
+                    }
+                    &:hover {
+                        color: $colorHover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-toggler {
+    background-color: $bgToggler;
+    color: $colorToggler;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+@media(max-width: 992px) {
+    .navbar-brand {
+        margin-left: auto;
+    }
+}
+
+.social-media img {
+    border-radius: 100%;
+    border: 1px solid $bgMain;
+    background-color: $bgMain;
+    width: 2rem;
+}
