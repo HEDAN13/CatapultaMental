@@ -98,6 +98,13 @@ header nav .navbar .navbar-nav {
     display: none;
   }
 }
+.imagen, .link-catapultas img, .cat-imagen {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 0.25rem min(0.65rem, 4%) min(1rem, 4%) min(0.65rem, 1%);
+}
+
 /* Contenido principal */
 main {
   background-color: #d7efff;
@@ -118,6 +125,7 @@ main .principal p {
 main .secundario {
   padding-top: min(1rem, 4%);
   padding-right: min(1.5rem, 6%);
+  padding-bottom: min(1rem, 4%);
   padding-left: min(1.5rem, 6%);
 }
 main .secundario article h2 {
@@ -128,12 +136,16 @@ main .secundario article p {
   text-align: justify;
 }
 
+.link-catapultas {
+  text-align: center;
+}
 .link-catapultas img {
   max-height: 300px;
 }
 
-.img-custom {
-  border-radius: 5px;
+.cat-imagen {
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Estilos para el formulario */
