@@ -42,18 +42,18 @@ main {
 
 .link-catapultas {
     text-align: center;
-    
+
     img {
         @extend .imagen;
         max-height: 300px;
     }
 }
 
- .cat-imagen {
+.cat-imagen {
     @extend .imagen;
     width: 100%;
     object-fit: cover;
- }
+}
 
 // @media(max-width: 992px) {
 
