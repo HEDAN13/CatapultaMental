@@ -18,11 +18,12 @@ main {
 
         p {
             text-align: justify;
+            margin-bottom: min(.75rem, 3%);
         }
     }
 
     .secundario {
-        padding-top: min(1rem, 4%);
+        padding-top: min(.5rem, 2%);
         padding-right: min(1.5rem, 6%);
         padding-bottom: min(1rem, 4%);
         padding-left: min(1.5rem, 6%);
@@ -35,6 +36,7 @@ main {
 
             p {
                 text-align: justify;
+                margin-bottom: min(.75rem, 3%)
             }
         }
     }
@@ -53,6 +55,10 @@ main {
     @extend .imagen;
     width: 100%;
     object-fit: cover;
+}
+
+.cat-descripcion {
+    @extend .secundario;
 }
 
 // @media(max-width: 992px) {
