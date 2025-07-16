@@ -151,6 +151,15 @@ main .secundario article p, main .cat-descripcion article p {
 }
 
 /* Estilos para el formulario */
+.formulario {
+  justify-content: center;
+  align-items: center;
+  padding-top: min(0.5rem, 2%);
+  padding-right: min(1.5rem, 6%);
+  padding-bottom: min(1rem, 4%);
+  padding-left: min(1.5rem, 6%);
+}
+
 .contact-form {
   max-width: 600px;
   width: 100%;
@@ -160,18 +169,47 @@ main .secundario article p, main .cat-descripcion article p {
   border: 1px solid #141b38;
   border-radius: 5px;
   box-shadow: 3px 3px #777;
+  padding: min(1.5rem, 10%);
+  margin-bottom: min(1rem, 4%);
+}
+.contact-fieldset legend {
+  text-align: center;
+  font-size: clamp(1rem, 4vw + 0.5rem, 2rem);
+  margin-bottom: min(1rem, 4%);
+}
+.contact-fieldset label {
+  margin-bottom: min(1rem, 4%);
+}
+.contact-fieldset input {
+  margin-bottom: min(1rem, 4%);
 }
 
-.btn-custom {
+.mensaje {
+  text-align: center;
+  margin-bottom: min(1rem, 4%);
+}
+.mensaje label {
+  margin-bottom: min(1rem, 4%);
+  font-size: clamp(1rem, 4vw + 0.5rem, 2rem);
+}
+
+.btn-submit {
+  text-align: center;
+  margin-bottom: min(1rem, 4%);
+}
+.btn-submit .btn-custom {
   background-color: #141b38;
   color: #ededed;
   border: none;
   border-radius: 25px;
   font-weight: 600;
   transition: background-color 0.3s ease;
+  padding-top: min(0.5rem, 4%);
+  padding-right: min(1.5rem, 10%);
+  padding-bottom: min(0.5rem, 4%);
+  padding-left: min(1.5rem, 10%);
 }
-
-.btn-custom:hover {
+.btn-submit .btn-custom:hover {
   background-color: #324cdd;
   color: #272727;
 }

@@ -61,11 +61,16 @@ main {
     @extend .secundario;
 }
 
-// @media(max-width: 992px) {
-
-// }
-
 /* Estilos para el formulario */
+.formulario {
+    justify-content: center;
+    align-items: center;
+    padding-top: min(.5rem, 2%);
+    padding-right: min(1.5rem, 6%);
+    padding-bottom: min(1rem, 4%);
+    padding-left: min(1.5rem, 6%);
+}
+
 .contact-form {
     max-width: 600px;
     width: 100%;
@@ -75,18 +80,53 @@ main {
     border: 1px solid variables.$bgPrincipal;
     border-radius: 5px;
     box-shadow: 3px 3px variables.$colorShadow;
+    padding: min(1.5rem, 10%);
+    margin-bottom: min(1rem, 4%);
+
+    legend {
+        text-align: center;
+        font-size: clamp(1rem, calc(4vw + .5rem), 2rem);
+        margin-bottom: min(1rem, 4%);
+    }
+
+    label {
+        margin-bottom: min(1rem, 4%);
+    }
+
+    input {
+        margin-bottom: min(1rem, 4%);
+    }
 }
 
-.btn-custom {
-    background-color: variables.$bgPrincipal;
-    color: variables.$colorPrincipal;
-    border: none;
-    border-radius: 25px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+.mensaje {
+    text-align: center;
+    margin-bottom: min(1rem, 4%);
+
+    label {
+        margin-bottom: min(1rem, 4%);
+        font-size: clamp(1rem, calc(4vw + .5rem), 2rem);
+    }
 }
 
-.btn-custom:hover {
-    background-color: variables.$colorHover;
-    color: variables.$colorMain;
+.btn-submit {
+    text-align: center;
+    margin-bottom: min(1rem, 4%);
+
+    .btn-custom {
+        background-color: variables.$bgPrincipal;
+        color: variables.$colorPrincipal;
+        border: none;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        padding-top: min(0.5rem, 4%);
+        padding-right: min(1.5rem, 10%);
+        padding-bottom: min(0.5rem, 4%);
+        padding-left: min(1.5rem, 10%);
+    }
+
+    .btn-custom:hover {
+        background-color: variables.$colorHover;
+        color: variables.$colorMain;
+    }
 }
