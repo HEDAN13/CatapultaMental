@@ -1,0 +1,15 @@
+@use "./variables";
+// MIXINS
+
+@mixin social-media ($mostrar) {
+    display: $mostrar;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        border-radius: 100%;
+        border: 1px solid variables.$bgMain;
+        background-color: variables.$bgMain;
+        width: 2rem;
+    }
+}

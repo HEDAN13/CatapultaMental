@@ -75,6 +75,7 @@ header nav .navbar .navbar-nav {
 .social-media {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .social-media img {
   border-radius: 100%;
@@ -106,9 +107,16 @@ header nav .navbar .navbar-nav {
 }
 
 /* Contenido principal */
+body {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   background-color: #d7efff;
   color: #272727;
+  flex: 1 1 auto;
 }
 main .principal {
   padding-top: min(1rem, 4%);
@@ -156,7 +164,7 @@ main .secundario article p, main .cat-descripcion article p {
   align-items: center;
   padding-top: min(0.5rem, 2%);
   padding-right: min(1.5rem, 6%);
-  padding-bottom: min(1rem, 4%);
+  padding-bottom: min(0.5rem, 2%);
   padding-left: min(1.5rem, 6%);
 }
 
@@ -217,6 +225,38 @@ main .secundario article p, main .cat-descripcion article p {
 footer {
   background-color: #141b38;
   color: #ededed;
+  margin-top: auto;
+  padding-top: min(0.5rem, 6%);
+}
+footer .social-media {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+footer .social-media img {
+  border-radius: 100%;
+  border: 1px solid #d7efff;
+  background-color: #d7efff;
+  width: 2rem;
+}
+@media (max-width: 992px) {
+  footer .social-media {
+    display: flex;
+  }
+}
+footer .social-link {
+  padding: 0.25rem;
+  margin: 0.25rem;
+  text-align: center;
+}
+footer article {
+  text-align: center;
+  padding: 0.25rem;
+}
+footer article p {
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

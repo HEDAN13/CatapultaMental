@@ -2,9 +2,16 @@
 @use "../utilities/extends";
 /* Contenido principal */
 
+body {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
 main {
     background-color: variables.$bgMain;
     color: variables.$colorMain;
+    flex: 1 1 auto;
 
     .principal {
         padding-top: min(1rem, 4%);
@@ -67,7 +74,7 @@ main {
     align-items: center;
     padding-top: min(.5rem, 2%);
     padding-right: min(1.5rem, 6%);
-    padding-bottom: min(1rem, 4%);
+    padding-bottom: min(.5rem, 2%);
     padding-left: min(1.5rem, 6%);
 }
 
