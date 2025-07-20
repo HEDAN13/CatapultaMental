@@ -14,36 +14,33 @@ main {
     flex: 1 1 auto;
 
     .principal {
-        padding-top: min(1rem, 4%);
-        padding-right: min(1.5rem, 6%);
-        padding-left: min(1.5rem, 6%);
+        padding-top: 1rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
 
         h1 {
-            font-size: clamp(1.5rem, calc(6vw + 1rem), 4rem);
+            font-size: 4rem;
             text-align: center;
         }
 
         p {
             text-align: justify;
-            margin-bottom: min(.75rem, 3%);
+            margin-bottom: .75rem;
         }
     }
 
     .secundario {
-        padding-top: min(.5rem, 2%);
-        padding-right: min(1.5rem, 6%);
-        padding-bottom: min(1rem, 4%);
-        padding-left: min(1.5rem, 6%);
+        padding: .5rem 1.5rem 1rem 1.5rem;
 
         article {
             h2 {
-                font-size: clamp(1rem, calc(4vw + .5rem), 2rem);
+                font-size: 2rem;
                 text-align: center;
             }
 
             p {
                 text-align: justify;
-                margin-bottom: min(.75rem, 3%)
+                margin-bottom: .75rem;
             }
         }
     }
@@ -72,10 +69,7 @@ main {
 .formulario {
     justify-content: center;
     align-items: center;
-    padding-top: min(.5rem, 2%);
-    padding-right: min(1.5rem, 6%);
-    padding-bottom: min(.5rem, 2%);
-    padding-left: min(1.5rem, 6%);
+    padding: .5rem 1.5rem .5rem 1.5rem;
 }
 
 .contact-form {
@@ -87,37 +81,37 @@ main {
     border: 1px solid variables.$bgPrincipal;
     border-radius: 5px;
     box-shadow: 3px 3px variables.$colorShadow;
-    padding: min(1.5rem, 10%);
-    margin-bottom: min(1rem, 4%);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
 
     legend {
         text-align: center;
-        font-size: clamp(1rem, calc(4vw + .5rem), 2rem);
-        margin-bottom: min(1rem, 4%);
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
     label {
-        margin-bottom: min(1rem, 4%);
+        margin-bottom: 1rem;
     }
 
     input {
-        margin-bottom: min(1rem, 4%);
+        margin-bottom: 1rem;
     }
 }
 
 .mensaje {
     text-align: center;
-    margin-bottom: min(1rem, 4%);
+    margin-bottom: 1rem;
 
     label {
-        margin-bottom: min(1rem, 4%);
-        font-size: clamp(1rem, calc(4vw + .5rem), 2rem);
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 }
 
 .btn-submit {
     text-align: center;
-    margin-bottom: min(1rem, 4%);
+    margin-bottom: 1rem;
 
     .btn-custom {
         background-color: variables.$bgPrincipal;
@@ -126,14 +120,82 @@ main {
         border-radius: 25px;
         font-weight: 600;
         transition: background-color 0.3s ease;
-        padding-top: min(0.5rem, 4%);
-        padding-right: min(1.5rem, 10%);
-        padding-bottom: min(0.5rem, 4%);
-        padding-left: min(1.5rem, 10%);
+        padding: .5rem 1.5rem .5rem 1.5rem;
     }
 
     .btn-custom:hover {
         background-color: variables.$colorHover;
         color: variables.$colorMain;
+    }
+}
+
+@media (max-width: variables.$anchoPc) {
+    main {
+        .principal {
+            padding-top: .5rem;
+            padding-right: .65rem;
+            padding-left: .65rem;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                margin-bottom: .35rem;    
+            }
+        }
+
+        .secundario {
+            padding: .2rem .65rem .5rem .65rem;
+
+            article {
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    margin-bottom: .35rem;
+                }
+            }
+        }
+    }
+
+    .formulario {
+        padding: .2rem .65rem .2rem .65rem;
+    }
+
+    .contact-fieldset {
+        padding: .65rem;
+        margin-bottom: .25rem;
+
+        legend {
+            font-size: 1.25rem;
+            margin-bottom: .25rem;
+        }
+
+        label {
+            margin-bottom: .25rem;
+        }
+
+        input {
+            margin-bottom: .25rem;
+        }
+    }
+
+    .mensaje {
+        margin-bottom: .25rem;
+
+        label {
+            font-size: 1.25rem;
+            margin-bottom: .25rem;
+        }
+    }
+
+    .btn-submit {
+        margin-bottom: .25rem;
+
+        .btn-custom {
+            padding: .2rem .65rem .2rem .65rem;
+        }
     }
 }

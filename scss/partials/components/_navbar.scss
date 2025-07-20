@@ -76,7 +76,7 @@ header {
     text-align: center;
 }
 
-@media(max-width: 992px) {
+@media(max-width: variables.$anchoPc) {
     .navbar-brand {
         margin-right: 0;
         margin-left: auto;

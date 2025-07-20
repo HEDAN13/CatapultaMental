@@ -1,7 +1,13 @@
+@use "../utilities/variables";
+
 // IMÁGENES
 .imagen {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    margin: 0.25rem min(0.65rem, 4%) min(1rem, 4%) min(0.65rem, 1%);
+    margin: 0.25rem 0.65rem 1rem 0.65rem;
+
+    @media (max-width: variables.$anchoPc){
+        margin: .2rem .4rem .5rem .3rem;
+    }
 }
