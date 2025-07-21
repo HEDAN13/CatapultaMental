@@ -119,7 +119,7 @@ body {
 }
 
 main {
-  background-color: #d7efff;
+  background-image: linear-gradient(to bottom, #d7efff, rgb(255, 233, 173));
   color: #272727;
   flex: 1 1 auto;
 }

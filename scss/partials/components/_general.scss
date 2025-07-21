@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    background-color: variables.$bgMain;
+    background-image: linear-gradient(to bottom,variables.$bgMain,variables.$bgMainLow);
     color: variables.$colorMain;
     flex: 1 1 auto;
 
