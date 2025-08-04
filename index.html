@@ -1,142 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
     <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Catapulta mental</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-custom">
-            <div class="container-fluid nav-elements">
-                <!-- Botón hamburguesa -->
-                <button class="navbar-toggler order-1 order-lg-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Logo -->
-                <a class="navbar-brand order-2 order-lg-0" href="#">
-                    <img src="./assets/catapultaMentalLogo.png" alt="Logo">
-                </a>
-                <!-- Contenido de la navbar -->
-                <div class="collapse navbar-collapse order-3 order-lg-1" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/tiposDeCatapultas.html">Tipos de catapultas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/principiosFisicos.html">Principios físicos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/sobreNosotros.html">Sobre nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="social-media order-0 order-lg-2">
-                    <a class="social-link" href="https://instagram.com/" target="_blank">
-                        <img src="./assets/instagram.png" alt="instagram logo">
-                    </a>
-                    <a class="social-link" href="https://facebook.com/" target="_blank">
-                        <img src="./assets/facebook.png" alt="facebook logo">
-                    </a>
-                    <a class="social-link" href="https://x.com/" target="_blank">
-                        <img src="./assets/twitter.png" alt="twitter logo">
-                    </a>
-                    <a class="social-link" href="https://gmail.com/" target="_blank">
-                        <img src="./assets/message.png" alt="mail logo">
-                    </a>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid nav-elements">
+          <!-- Botón hamburguesa -->
+          <button
+            class="navbar-toggler order-1 order-lg-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Logo -->
+          <a class="navbar-brand order-2 order-lg-0" href="#">
+            <img src="./assets/catapultaMentalLogo.webp" alt="Logo" />
+          </a>
+          <!-- Contenido de la navbar -->
+          <div
+            class="collapse navbar-collapse order-3 order-lg-1"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/tiposDeCatapultas.html"
+                  >Tipos de catapultas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/principiosFisicos.html"
+                  >Principios físicos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sobreNosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social-media order-0 order-lg-2">
+            <a
+              class="social-link"
+              href="https://instagram.com/"
+              target="_blank"
+            >
+              <img src="./assets/instagram.webp" alt="instagram logo" />
+            </a>
+            <a class="social-link" href="https://facebook.com/" target="_blank">
+              <img src="./assets/facebook.webp" alt="facebook logo" />
+            </a>
+            <a class="social-link" href="https://x.com/" target="_blank">
+              <img src="./assets/twitter.webp" alt="twitter logo" />
+            </a>
+            <a class="social-link" href="https://gmail.com/" target="_blank">
+              <img src="./assets/message.webp" alt="mail logo" />
+            </a>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- Principal -->
     <main>
-        <section class="container principal">
-            <h1 class="animate__animated animate__rollIn">Catapulta mental</h1>
-            <p>En la prehistoria, algo que diferenció a la humanidad del resto de los animales, fue la capacidad de
-                arrojar proyectiles. El ingenio ha sido la llave que abrió las puertas del avance y la superación de los
-                desafíos. En la época medieval, este ingenio se manifestó de forma sorprendente en los dispositivos de
-                asedio, máquinas diseñadas para atacar fortalezas, atravesar murallas y lanzar proyectiles a grandes
-                distancias y velocidades, todo ello antes de la invención de la pólvora. En Catapulta mental te
-                invitamos a explorar la fascinación y ciencia detrás de estos artefactos, desentrañando los principios
-                físicos que les dan vida.</p>
-        </section>
+      <section class="container principal">
+        <h1 class="animate__animated animate__rollIn">Catapulta mental</h1>
+        <p>
+          En la prehistoria, algo que diferenció a la humanidad del resto de los
+          animales, fue la capacidad de arrojar proyectiles. El ingenio ha sido
+          la llave que abrió las puertas del avance y la superación de los
+          desafíos. En la época medieval, este ingenio se manifestó de forma
+          sorprendente en los dispositivos de asedio, máquinas diseñadas para
+          atacar fortalezas, atravesar murallas y lanzar proyectiles a grandes
+          distancias y velocidades, todo ello antes de la invención de la
+          pólvora. En Catapulta mental te invitamos a explorar la fascinación y
+          ciencia detrás de estos artefactos, desentrañando los principios
+          físicos que les dan vida.
+        </p>
+      </section>
 
-        <section class="container secundario">
-            <article>
-                <h2>Catapultas y la física</h2>
-                <p>Antes de que los cañones y la pólvora dominaran los campos de batalla, las civilizaciones medievales
-                    dependían de una variedad de máquinas para conquistar castillos y defender territorios. Entre las
-                    más conocidas destacan la catapulta, el trebuchet, la balista y el onagro. Cada una, con mecanismos
-                    propios, representaba una maravilla de creatividad y física aplicada.</p>
-                <ul>
-                    <li><b>Catapulta:</b> Utilizaba tensión o torsión para lanzar piedras, bolas de fuego o incluso
-                        materiales
-                        infecciosos sobre las murallas enemigas.</li>
-                    <li><b>Trebuchet:</b> Basado en la palanca y el contrapeso, era capaz de arrojar enormes proyectiles
-                        con
-                        una precisión y potencia sorprendentes.</li>
-                    <li><b>Balista:</b> Parecida a una enorme ballesta, disparaba dardos o flechas de gran tamaño
-                        aprovechando
-                        la energía almacenada en cuerdas tensadas.</li>
-                    <li><b>Onagro:</b> Variante de la catapulta, usaba un sistema de torsión con una sola cuerda y
-                        lanzaba
-                        proyectiles en trayectorias parabólicas.</li>
-                </ul>
-            </article>
-        </section>
-        <section class="link-catapultas container">
-            <div class="row">
-                <a class="col-12 col-lg-4" href="./pages/tiposDeCatapultas.html#trebuchet"><img
-                        src="./assets/Warwulf1.jpg" alt="trebuchet"></a>
-                <a class="col-12 col-lg-4" href="./pages/tiposDeCatapultas.html#onagro"><img src="./assets/onager21.jpg"
-                        alt="onagro"></a>
-                <a class="col-12 col-lg-4" href="./pages/tiposDeCatapultas.html#ballista"><img
-                        src="./assets/ballista.jpg" alt="ballista"></a>
-            </div>
-        </section>
+      <section class="container secundario">
+        <article>
+          <h2>Catapultas y la física</h2>
+          <p>
+            Antes de que los cañones y la pólvora dominaran los campos de
+            batalla, las civilizaciones medievales dependían de una variedad de
+            máquinas para conquistar castillos y defender territorios. Entre las
+            más conocidas destacan la catapulta, el trebuchet, la balista y el
+            onagro. Cada una, con mecanismos propios, representaba una maravilla
+            de creatividad y física aplicada.
+          </p>
+          <ul>
+            <li>
+              <b>Catapulta:</b> Utilizaba tensión o torsión para lanzar piedras,
+              bolas de fuego o incluso materiales infecciosos sobre las murallas
+              enemigas.
+            </li>
+            <li>
+              <b>Trebuchet:</b> Basado en la palanca y el contrapeso, era capaz
+              de arrojar enormes proyectiles con una precisión y potencia
+              sorprendentes.
+            </li>
+            <li>
+              <b>Balista:</b> Parecida a una enorme ballesta, disparaba dardos o
+              flechas de gran tamaño aprovechando la energía almacenada en
+              cuerdas tensadas.
+            </li>
+            <li>
+              <b>Onagro:</b> Variante de la catapulta, usaba un sistema de
+              torsión con una sola cuerda y lanzaba proyectiles en trayectorias
+              parabólicas.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="link-catapultas container">
+        <div class="row">
+          <a
+            class="col-12 col-lg-4"
+            href="./pages/tiposDeCatapultas.html#trebuchet"
+            ><img src="./assets/Warwulf1.webp" alt="trebuchet"
+          /></a>
+          <a
+            class="col-12 col-lg-4"
+            href="./pages/tiposDeCatapultas.html#onagro"
+            ><img src="./assets/onager21.webp" alt="onagro"
+          /></a>
+          <a
+            class="col-12 col-lg-4"
+            href="./pages/tiposDeCatapultas.html#ballista"
+            ><img src="./assets/ballista.webp" alt="ballista"
+          /></a>
+        </div>
+      </section>
     </main>
     <!-- Pie de página -->
     <footer>
-        <div class="social-media order-2">
-            <a class="social-link" href="https://instagram.com/" target="_blank">
-                <img src="./assets/instagram.png" alt="instagram logo">
-            </a>
-            <a class="social-link" href="https://facebook.com/" target="_blank">
-                <img src="./assets/facebook.png" alt="facebook logo">
-            </a>
-            <a class="social-link" href="https://x.com/" target="_blank">
-                <img src="./assets/twitter.png" alt="twitter logo">
-            </a>
-            <a class="social-link" href="https://gmail.com/" target="_blank">
-                <img src="./assets/message.png" alt="mail logo">
-            </a>
-        </div>
-        <article class="container">
-            <p>Catapulta mental&copy;</p>
-            <p>Copyright todos los derechos reservados - 2025</p>
-        </article>
+      <div class="social-media order-2">
+        <a class="social-link" href="https://instagram.com/" target="_blank">
+          <img src="./assets/instagram.webp" alt="instagram logo" />
+        </a>
+        <a class="social-link" href="https://facebook.com/" target="_blank">
+          <img src="./assets/facebook.webp" alt="facebook logo" />
+        </a>
+        <a class="social-link" href="https://x.com/" target="_blank">
+          <img src="./assets/twitter.webp" alt="twitter logo" />
+        </a>
+        <a class="social-link" href="https://gmail.com/" target="_blank">
+          <img src="./assets/message.webp" alt="mail logo" />
+        </a>
+      </div>
+      <article class="container">
+        <p>Catapulta mental&copy;</p>
+        <p>Copyright todos los derechos reservados - 2025</p>
+      </article>
     </footer>
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

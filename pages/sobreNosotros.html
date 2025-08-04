@@ -1,173 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css" />
     <title>Catapulta mental</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-custom">
-            <div class="container-fluid nav-elements">
-                <!-- Botón hamburguesa -->
-                <button class="navbar-toggler order-1 order-lg-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Logo -->
-                <a class="navbar-brand order-2 order-lg-0" href="../index.html">
-                    <img src="../assets/catapultaMentalLogo.png" alt="Logo">
-                </a>
-                <!-- Contenido de la navbar -->
-                <div class="collapse navbar-collapse order-3 order-lg-1" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./tiposDeCatapultas.html">Tipos de catapultas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./principiosFisicos.html">Principios físicos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Sobre nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="social-media order-0 order-lg-2">
-                    <a class="social-link" href="https://instagram.com/" target="_blank">
-                        <img src="../assets/instagram.png" alt="instagram logo">
-                    </a>
-                    <a class="social-link" href="https://facebook.com/" target="_blank">
-                        <img src="../assets/facebook.png" alt="facebook logo">
-                    </a>
-                    <a class="social-link" href="https://x.com/" target="_blank">
-                        <img src="../assets/twitter.png" alt="twitter logo">
-                    </a>
-                    <a class="social-link" href="https://gmail.com/" target="_blank">
-                        <img src="../assets/message.png" alt="mail logo">
-                    </a>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid nav-elements">
+          <!-- Botón hamburguesa -->
+          <button
+            class="navbar-toggler order-1 order-lg-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Logo -->
+          <a class="navbar-brand order-2 order-lg-0" href="../index.html">
+            <img src="../assets/catapultaMentalLogo.webp" alt="Logo" />
+          </a>
+          <!-- Contenido de la navbar -->
+          <div
+            class="collapse navbar-collapse order-3 order-lg-1"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tiposDeCatapultas.html"
+                  >Tipos de catapultas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./principiosFisicos.html"
+                  >Principios físicos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social-media order-0 order-lg-2">
+            <a
+              class="social-link"
+              href="https://instagram.com/"
+              target="_blank"
+            >
+              <img src="../assets/instagram.webp" alt="instagram logo" />
+            </a>
+            <a class="social-link" href="https://facebook.com/" target="_blank">
+              <img src="../assets/facebook.webp" alt="facebook logo" />
+            </a>
+            <a class="social-link" href="https://x.com/" target="_blank">
+              <img src="../assets/twitter.webp" alt="twitter logo" />
+            </a>
+            <a class="social-link" href="https://gmail.com/" target="_blank">
+              <img src="../assets/message.webp" alt="mail logo" />
+            </a>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- Principal -->
     <main>
-        <article class="principal">
-            <h1>Sobre nosotros</h1>
-        </article>
-        <div id="carouselExample" class="carousel carousel-dark slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active secundario">
-                    <article class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-2"></div>
-                            <div class="col-8 align-items-stretch">
-                                <h2>Nosotros</h2>
-                                <p>
-                                    Mi nombre es Héctor Daniel Pazo, vivo en la provincia de Buenos Aires, Argentina.
-                                    Como muchos descubrí las armas de asedio medieval en videojuegos como el Age of
-                                    Empires. Hace unos 10 años durante una feria medieval luego de recorrerla con la
-                                    ilusión de ver alguna catapulta en persona, me fui desilusionado. Por tal motivo
-                                    fabriqué modelos en madera de un onagro, un trebuchet y una balista. Para fabricar
-                                    estos modelos tuve que realizar una investigación exhaustiva sobre estos
-                                    dispositivos. Además de fabricar unos modelos en tamaño de escritorio, también
-                                    fabriqué un trebuchet de un metro de altura, capaz de arrojar una pelota de tenis a
-                                    unos 20 metros de distancia. Básicamente esta experiencia fue la inspiración para
-                                    este sitio.
-                                </p>
-                            </div>
-                            <div class="col-2"></div>
-                        </div>
-                    </article>
+      <article class="principal">
+        <h1>Sobre nosotros</h1>
+      </article>
+      <div id="carouselExample" class="carousel carousel-dark slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active secundario">
+            <article class="container">
+              <div class="row justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-8 align-items-stretch">
+                  <h2>Nosotros</h2>
+                  <p>
+                    Mi nombre es Héctor Daniel Pazo, vivo en la provincia de
+                    Buenos Aires, Argentina. Como muchos descubrí las armas de
+                    asedio medieval en videojuegos como el Age of Empires. Hace
+                    unos 10 años durante una feria medieval luego de recorrerla
+                    con la ilusión de ver alguna catapulta en persona, me fui
+                    desilusionado. Por tal motivo fabriqué modelos en madera de
+                    un onagro, un trebuchet y una balista. Para fabricar estos
+                    modelos tuve que realizar una investigación exhaustiva sobre
+                    estos dispositivos. Además de fabricar unos modelos en
+                    tamaño de escritorio, también fabriqué un trebuchet de un
+                    metro de altura, capaz de arrojar una pelota de tenis a unos
+                    20 metros de distancia. Básicamente esta experiencia fue la
+                    inspiración para este sitio.
+                  </p>
                 </div>
-                <div class="carousel-item secundario">
-                    <article class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-2"></div>
-                            <div class="col-8 align-items-stretch">
-                                <h2>Nuestro objetivo</h2>
-                                <p>
-                                    En Catapulta Mental celebramos el asombro que nace al descubrir la ciencia detrás de
-                                    la historia. Creemos que cada máquina, cada piedra lanzada, es testimonio del
-                                    ingenio humano aplicando las leyes fundamentales de la naturaleza. Nuestro objetivo
-                                    es despertar la curiosidad y nutrir el deseo de aprender, mostrando cómo los
-                                    principios de la física se manifiestan en ejemplos concretos, sorprendentes y
-                                    memorables. Queremos que cada visitante sienta la chispa del descubrimiento y vea en
-                                    el conocimiento una herramienta para imaginar y construir.
-                                </p>
-                            </div>
-                            <div class="col-2"></div>
-                        </div>
-                    </article>
+                <div class="col-2"></div>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-item secundario">
+            <article class="container">
+              <div class="row justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-8 align-items-stretch">
+                  <h2>Nuestro objetivo</h2>
+                  <p>
+                    En Catapulta Mental celebramos el asombro que nace al
+                    descubrir la ciencia detrás de la historia. Creemos que cada
+                    máquina, cada piedra lanzada, es testimonio del ingenio
+                    humano aplicando las leyes fundamentales de la naturaleza.
+                    Nuestro objetivo es despertar la curiosidad y nutrir el
+                    deseo de aprender, mostrando cómo los principios de la
+                    física se manifiestan en ejemplos concretos, sorprendentes y
+                    memorables. Queremos que cada visitante sienta la chispa del
+                    descubrimiento y vea en el conocimiento una herramienta para
+                    imaginar y construir.
+                  </p>
                 </div>
-                <div class="carousel-item secundario">
-                    <article class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-2"></div>
-                            <div class="col-8 align-items-stretch">
-                                <h2>Nuestra visión</h2>
-                                <p>
-                                    En Catapulta Mental creemos en el poder transformador del pensamiento creativo.
-                                    Nuestra visión es construir un espacio donde las ideas se lancen con la fuerza de la
-                                    curiosidad y la dirección del conocimiento, alcanzando nuevas alturas en la
-                                    exploración, el aprendizaje y la creación. Nos proponemos ser un punto de impulso
-                                    para mentes inquietas, un lugar donde la reflexión, el juego y la experimentación
-                                    conviven.
-                                </p>
-                            </div>
-                            <div class="col-2"></div>
-                        </div>
-                    </article>
+                <div class="col-2"></div>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-item secundario">
+            <article class="container">
+              <div class="row justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-8 align-items-stretch">
+                  <h2>Nuestra visión</h2>
+                  <p>
+                    En Catapulta Mental creemos en el poder transformador del
+                    pensamiento creativo. Nuestra visión es construir un espacio
+                    donde las ideas se lancen con la fuerza de la curiosidad y
+                    la dirección del conocimiento, alcanzando nuevas alturas en
+                    la exploración, el aprendizaje y la creación. Nos proponemos
+                    ser un punto de impulso para mentes inquietas, un lugar
+                    donde la reflexión, el juego y la experimentación conviven.
+                  </p>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+                <div class="col-2"></div>
+              </div>
+            </article>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </main>
 
     <footer>
-        <div class="social-media order-2">
-            <a class="social-link" href="https://instagram.com/" target="_blank">
-                <img src="../assets/instagram.png" alt="instagram logo">
-            </a>
-            <a class="social-link" href="https://facebook.com/" target="_blank">
-                <img src="../assets/facebook.png" alt="facebook logo">
-            </a>
-            <a class="social-link" href="https://x.com/" target="_blank">
-                <img src="../assets/twitter.png" alt="twitter logo">
-            </a>
-            <a class="social-link" href="https://gmail.com/" target="_blank">
-                <img src="../assets/message.png" alt="mail logo">
-            </a>
-        </div>
-        <article class="container">
-            <p>Catapulta mental&copy;</p>
-            <p>Copyright todos los derechos reservados - 2025</p>
-        </article>
+      <div class="social-media order-2">
+        <a class="social-link" href="https://instagram.com/" target="_blank">
+          <img src="../assets/instagram.webp" alt="instagram logo" />
+        </a>
+        <a class="social-link" href="https://facebook.com/" target="_blank">
+          <img src="../assets/facebook.webp" alt="facebook logo" />
+        </a>
+        <a class="social-link" href="https://x.com/" target="_blank">
+          <img src="../assets/twitter.webp" alt="twitter logo" />
+        </a>
+        <a class="social-link" href="https://gmail.com/" target="_blank">
+          <img src="../assets/message.webp" alt="mail logo" />
+        </a>
+      </div>
+      <article class="container">
+        <p>Catapulta mental&copy;</p>
+        <p>Copyright todos los derechos reservados - 2025</p>
+      </article>
     </footer>
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
