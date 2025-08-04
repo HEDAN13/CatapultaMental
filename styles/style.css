@@ -112,12 +112,6 @@ header nav a img {
 }
 
 /* Contenido principal */
-body {
-  height: 100dvh;
-  display: flex;
-  flex-direction: column;
-}
-
 main {
   background-image: linear-gradient(to bottom, #d7efff, rgb(255, 233, 173));
   color: #272727;

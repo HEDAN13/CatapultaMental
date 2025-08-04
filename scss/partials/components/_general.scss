@@ -2,200 +2,198 @@
 @use "../utilities/extends";
 /* Contenido principal */
 
-body {
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-}
-
 main {
-    background-image: linear-gradient(to bottom,variables.$bgMain,variables.$bgMainLow);
-    color: variables.$colorMain;
-    flex: 1 1 auto;
+  background-image: linear-gradient(
+    to bottom,
+    variables.$bgMain,
+    variables.$bgMainLow
+  );
+  color: variables.$colorMain;
+  flex: 1 1 auto;
 
-    .principal {
-        padding-top: 1rem;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
+  .principal {
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 
-        h1 {
-            font-size: 4rem;
-            text-align: center;
-        }
-
-        p {
-            text-align: justify;
-            margin-bottom: .75rem;
-        }
+    h1 {
+      font-size: 4rem;
+      text-align: center;
     }
 
-    .secundario {
-        padding: .5rem 1.5rem 1rem 1.5rem;
-
-        article {
-            h2 {
-                font-size: 2rem;
-                text-align: center;
-            }
-
-            p {
-                text-align: justify;
-                margin-bottom: .75rem;
-            }
-        }
+    p {
+      text-align: justify;
+      margin-bottom: 0.75rem;
     }
+  }
+
+  .secundario {
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
+
+    article {
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      p {
+        text-align: justify;
+        margin-bottom: 0.75rem;
+      }
+    }
+  }
 }
 
 .link-catapultas {
-    text-align: center;
+  text-align: center;
 
-    img {
-        @extend .imagen;
-        max-height: 300px;
-    }
+  img {
+    @extend .imagen;
+    max-height: 300px;
+  }
 }
 
 .cat-imagen {
-    @extend .imagen;
-    width: 100%;
-    object-fit: cover;
+  @extend .imagen;
+  width: 100%;
+  object-fit: cover;
 }
 
 .cat-descripcion {
-    @extend .secundario;
+  @extend .secundario;
 }
 
 /* Estilos para el formulario */
 .formulario {
-    justify-content: center;
-    align-items: center;
-    padding: .5rem 1.5rem .5rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
 
 .contact-form {
-    max-width: 600px;
-    width: 100%;
+  max-width: 600px;
+  width: 100%;
 }
 
 .contact-fieldset {
-    border: 1px solid variables.$bgPrincipal;
-    border-radius: 5px;
-    box-shadow: 3px 3px variables.$colorShadow;
-    padding: 1.5rem;
+  border: 1px solid variables.$bgPrincipal;
+  border-radius: 5px;
+  box-shadow: 3px 3px variables.$colorShadow;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+
+  legend {
+    text-align: center;
+    font-size: 2rem;
     margin-bottom: 1rem;
+  }
 
-    legend {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
+  label {
+    margin-bottom: 1rem;
+  }
 
-    label {
-        margin-bottom: 1rem;
-    }
-
-    input {
-        margin-bottom: 1rem;
-    }
+  input {
+    margin-bottom: 1rem;
+  }
 }
 
 .mensaje {
-    text-align: center;
-    margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 
-    label {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
+  label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .btn-submit {
-    text-align: center;
-    margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 
-    .btn-custom {
-        background-color: variables.$bgPrincipal;
-        color: variables.$colorPrincipal;
-        border: none;
-        border-radius: 25px;
-        font-weight: 600;
-        transition: background-color 0.3s ease;
-        padding: .5rem 1.5rem .5rem 1.5rem;
-    }
+  .btn-custom {
+    background-color: variables.$bgPrincipal;
+    color: variables.$colorPrincipal;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  }
 
-    .btn-custom:hover {
-        background-color: variables.$colorHover;
-        color: variables.$colorMain;
-    }
+  .btn-custom:hover {
+    background-color: variables.$colorHover;
+    color: variables.$colorMain;
+  }
 }
 
 @media (max-width: variables.$anchoPc) {
-    main {
-        .principal {
-            padding-top: .5rem;
-            padding-right: .65rem;
-            padding-left: .65rem;
+  main {
+    .principal {
+      padding-top: 0.5rem;
+      padding-right: 0.65rem;
+      padding-left: 0.65rem;
 
-            h1 {
-                font-size: 2rem;
-            }
+      h1 {
+        font-size: 2rem;
+      }
 
-            p {
-                margin-bottom: .35rem;    
-            }
-        }
-
-        .secundario {
-            padding: .2rem .65rem .5rem .65rem;
-
-            article {
-                h2 {
-                    font-size: 1.5rem;
-                }
-
-                p {
-                    margin-bottom: .35rem;
-                }
-            }
-        }
+      p {
+        margin-bottom: 0.35rem;
+      }
     }
 
-    .formulario {
-        padding: .2rem .65rem .2rem .65rem;
+    .secundario {
+      padding: 0.2rem 0.65rem 0.5rem 0.65rem;
+
+      article {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          margin-bottom: 0.35rem;
+        }
+      }
+    }
+  }
+
+  .formulario {
+    padding: 0.2rem 0.65rem 0.2rem 0.65rem;
+  }
+
+  .contact-fieldset {
+    padding: 0.65rem;
+    margin-bottom: 0.25rem;
+
+    legend {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
     }
 
-    .contact-fieldset {
-        padding: .65rem;
-        margin-bottom: .25rem;
-
-        legend {
-            font-size: 1.25rem;
-            margin-bottom: .25rem;
-        }
-
-        label {
-            margin-bottom: .25rem;
-        }
-
-        input {
-            margin-bottom: .25rem;
-        }
+    label {
+      margin-bottom: 0.25rem;
     }
 
-    .mensaje {
-        margin-bottom: .25rem;
-
-        label {
-            font-size: 1.25rem;
-            margin-bottom: .25rem;
-        }
+    input {
+      margin-bottom: 0.25rem;
     }
+  }
 
-    .btn-submit {
-        margin-bottom: .25rem;
+  .mensaje {
+    margin-bottom: 0.25rem;
 
-        .btn-custom {
-            padding: .2rem .65rem .2rem .65rem;
-        }
+    label {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
     }
+  }
+
+  .btn-submit {
+    margin-bottom: 0.25rem;
+
+    .btn-custom {
+      padding: 0.2rem 0.65rem 0.2rem 0.65rem;
+    }
+  }
 }
