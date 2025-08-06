@@ -63,6 +63,20 @@ main {
   @extend .secundario;
 }
 
+.carousel {
+  background-color: rgba(variables.$bgPrincipal, 0.8);
+  border-radius: 5px;
+  .carousel-item {
+    text-align: center;
+    img {
+      @extend .cat-imagen;
+      max-height: 450px;
+      margin: 0;
+      object-fit: contain;
+    }
+  }
+}
+
 /* Estilos para el formulario */
 .formulario {
   justify-content: center;
@@ -194,6 +208,14 @@ main {
 
     .btn-custom {
       padding: 0.2rem 0.65rem 0.2rem 0.65rem;
+    }
+  }
+
+  .carousel {
+    .carousel-item {
+      img {
+        height: 300px;
+      }
     }
   }
 }

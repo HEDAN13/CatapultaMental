@@ -99,14 +99,14 @@ header nav a img {
     display: none;
   }
 }
-.imagen, .link-catapultas img, .cat-imagen {
+.imagen, .link-catapultas img, .cat-imagen, .carousel .carousel-item img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
   margin: 0.25rem 0.65rem 1rem 0.65rem;
 }
 @media (max-width: 992px) {
-  .imagen, .link-catapultas img, .cat-imagen {
+  .imagen, .link-catapultas img, .cat-imagen, .carousel .carousel-item img {
     margin: 0.2rem 0.4rem 0.5rem 0.3rem;
   }
 }
@@ -149,9 +149,22 @@ main .secundario article p, main .cat-descripcion article p {
   max-height: 300px;
 }
 
-.cat-imagen {
+.cat-imagen, .carousel .carousel-item img {
   width: 100%;
   object-fit: cover;
+}
+
+.carousel {
+  background-color: rgba(20, 27, 56, 0.8);
+  border-radius: 5px;
+}
+.carousel .carousel-item {
+  text-align: center;
+}
+.carousel .carousel-item img {
+  max-height: 450px;
+  margin: 0;
+  object-fit: contain;
 }
 
 /* Estilos para el formulario */
@@ -262,6 +275,9 @@ main .secundario article p, main .cat-descripcion article p {
   }
   .btn-submit .btn-custom {
     padding: 0.2rem 0.65rem 0.2rem 0.65rem;
+  }
+  .carousel .carousel-item img {
+    height: 300px;
   }
 }
 footer {
