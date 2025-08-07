@@ -225,6 +225,24 @@ main .secundario article p, main .cat-descripcion article p {
   color: #272727;
 }
 
+/* Información de contacto */
+.contacto-info {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: auto;
+}
+.contacto-info p {
+  text-align: center;
+  margin: 0.25rem 0;
+}
+.contacto-info iframe {
+  border: none;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
 @media (max-width: 992px) {
   main .principal {
     padding-top: 0.5rem;
@@ -275,6 +293,15 @@ main .secundario article p, main .cat-descripcion article p {
   }
   .btn-submit .btn-custom {
     padding: 0.2rem 0.65rem 0.2rem 0.65rem;
+  }
+  .contacto-info {
+    margin-top: 0.5rem;
+    margin-bottom: auto;
+  }
+  .contacto-info iframe {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0.25rem;
   }
   .carousel .carousel-item img {
     height: 300px;
