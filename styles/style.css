@@ -18,6 +18,24 @@ body {
   font-family: "Libre Franklin", sans-serif;
 }
 
+.imagen, .link-catapultas img, .cat-imagen, .carousel .carousel-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 0.25rem 0.65rem 1rem 0.65rem;
+}
+@media (max-width: 992px) {
+  .imagen, .link-catapultas img, .cat-imagen, .carousel .carousel-item img {
+    margin: 0.2rem 0.4rem 0.5rem 0.3rem;
+  }
+}
+
+.social-link {
+  padding: 0.25rem;
+  margin: 0.25rem;
+  text-align: center;
+}
+
 /* Barra de navegación */
 header nav {
   background-color: #141b38;
@@ -84,12 +102,6 @@ header nav a img {
   width: 2rem;
 }
 
-.social-link {
-  padding: 0.25rem;
-  margin: 0.25rem;
-  text-align: center;
-}
-
 @media (max-width: 992px) {
   .navbar-brand {
     margin-right: 0;
@@ -99,18 +111,6 @@ header nav a img {
     display: none;
   }
 }
-.imagen, .link-catapultas img, .cat-imagen, .carousel .carousel-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin: 0.25rem 0.65rem 1rem 0.65rem;
-}
-@media (max-width: 992px) {
-  .imagen, .link-catapultas img, .cat-imagen, .carousel .carousel-item img {
-    margin: 0.2rem 0.4rem 0.5rem 0.3rem;
-  }
-}
-
 /* Contenido principal */
 main {
   background-image: linear-gradient(to bottom, #d7efff, rgb(255, 233, 173));
@@ -118,9 +118,7 @@ main {
   flex: 1 1 auto;
 }
 main .principal {
-  padding-top: 1rem;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding: 1rem 1.5rem 1.5rem;
 }
 main .principal h1 {
   font-size: 4rem;
@@ -218,7 +216,7 @@ main .secundario article p, main .cat-descripcion article p {
   border-radius: 25px;
   font-weight: 600;
   transition: background-color 0.3s ease;
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 .btn-submit .btn-custom:hover {
   background-color: #324cdd;
@@ -245,9 +243,7 @@ main .secundario article p, main .cat-descripcion article p {
 
 @media (max-width: 992px) {
   main .principal {
-    padding-top: 0.5rem;
-    padding-right: 0.65rem;
-    padding-left: 0.65rem;
+    padding: 0.5rem 0.65rem 0.65rem;
   }
   main .principal h1 {
     font-size: 2rem;
@@ -333,11 +329,6 @@ footer .social-media img {
   footer .social-media {
     display: flex;
   }
-}
-footer .social-link {
-  padding: 0.25rem;
-  margin: 0.25rem;
-  text-align: center;
 }
 footer article {
   text-align: center;

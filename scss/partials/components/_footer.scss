@@ -3,37 +3,35 @@
 // Footer
 
 footer {
-    background-color: variables.$bgPrincipal;
-    color: variables.$colorPrincipal;
-    margin-top: auto;
-    padding-top: .5rem;
+  background-color: variables.$bgPrincipal;
+  color: variables.$colorPrincipal;
+  margin-top: auto;
+  padding-top: 0.5rem;
+
+  @media (max-width: variables.$anchoPc) {
+    padding-top: 0.25rem;
+  }
+
+  .social-media {
+    @include mixins.social-media(none);
 
     @media (max-width: variables.$anchoPc) {
-        padding-top: .25rem;
+      display: flex;
     }
+  }
 
-    .social-media {
-        @include mixins.social-media(none);
+  .social-link {
+    @extend .social-link;
+  }
 
-        @media (max-width: variables.$anchoPc) {
-            display: flex;
-        }
+  article {
+    text-align: center;
+    padding: 0.25rem;
+
+    p {
+      justify-content: space-around;
+      align-items: center;
+      margin: 0.25rem;
     }
-
-    .social-link {
-        padding: .25rem;
-        margin: .25rem;
-        text-align: center;
-    }
-
-    article {
-        text-align: center;
-        padding: .25rem;
-
-        p {
-            justify-content: space-around;
-            align-items: center;
-            margin: .25rem;
-        }
-    }
+  }
 }

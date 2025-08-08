@@ -1,88 +1,87 @@
 @use "../utilities/variables";
 @use "../utilities/mixins";
+@use "../utilities/extends";
 /* Barra de navegación */
 
 header {
-    nav {
-        background-color: variables.$bgPrincipal;
-        padding: 0.5rem 1rem;
+  nav {
+    background-color: variables.$bgPrincipal;
+    padding: 0.5rem 1rem;
 
-        .nav-elements {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            width: 100%;
-        }
-
-        a {
-            color: variables.$colorPrincipal;
-            text-decoration: none;
-
-            img {
-                display: inline-block;
-                vertical-align: text-top;
-                max-height: 70px;
-            }
-        }
+    .nav-elements {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      width: 100%;
     }
+
+    a {
+      color: variables.$colorPrincipal;
+      text-decoration: none;
+
+      img {
+        display: inline-block;
+        vertical-align: text-top;
+        max-height: 70px;
+      }
+    }
+  }
 }
 
 .navbar {
-    .navbar-nav {
-        list-style: none;
+  .navbar-nav {
+    list-style: none;
 
-        .nav-link {
-            color: variables.$colorPrincipal;
+    .nav-link {
+      color: variables.$colorPrincipal;
 
-            &.active,
-            &.show {
-                color: variables.$colorActual;
-                font-weight: bold;
-            }
+      &.active,
+      &.show {
+        color: variables.$colorActual;
+        font-weight: bold;
+      }
 
-            &:hover {
-                color: variables.$colorHover;
-            }
-        }
+      &:hover {
+        color: variables.$colorHover;
+      }
     }
+  }
 }
 
 .navbar-toggler {
-    background-color: variables.$bgToggler;
-    color: variables.$colorToggler;
+  background-color: variables.$bgToggler;
+  color: variables.$colorToggler;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navbar-brand {
-    margin-right: auto;
-    margin-left: .5rem;
+  margin-right: auto;
+  margin-left: 0.5rem;
 }
 
 .navbar-collapse {
-    justify-content: center;
+  justify-content: center;
 }
 
 .social-media {
-    @include mixins.social-media(flex);
+  @include mixins.social-media(flex);
 }
 
 .social-link {
-    padding: .25rem;
-    margin: .25rem;
-    text-align: center;
+  @extend .social-link;
 }
 
-@media(max-width: variables.$anchoPc) {
-    .navbar-brand {
-        margin-right: 0;
-        margin-left: auto;
-    }
+@media (max-width: variables.$anchoPc) {
+  .navbar-brand {
+    margin-right: 0;
+    margin-left: auto;
+  }
 
-    .social-media {
-        display: none;
-    }
+  .social-media {
+    display: none;
+  }
 }

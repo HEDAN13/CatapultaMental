@@ -2,12 +2,19 @@
 
 // IMÁGENES
 .imagen {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin: 0.25rem 0.65rem 1rem 0.65rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 0.25rem 0.65rem 1rem 0.65rem;
 
-    @media (max-width: variables.$anchoPc){
-        margin: .2rem .4rem .5rem .3rem;
-    }
+  @media (max-width: variables.$anchoPc) {
+    margin: 0.2rem 0.4rem 0.5rem 0.3rem;
+  }
+}
+
+// Links de redes sociales
+.social-link {
+  padding: 0.25rem;
+  margin: 0.25rem;
+  text-align: center;
 }
